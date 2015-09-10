@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>HOME</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<link href='http://fonts.useso.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css'>
+<script src="js/jquery-1.11.0.min.js"></script>
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!---- start-smoth-scrolling---->
+</head>
+<body>
+	<!----start-header---->
+	<div class="header" id="home">
+		<div class="container">
+			<div class="logo">
+				<a href="index.html"><img src="images/logo-3.png" alt=""></a>
+			</div>
+			<div class="navigation">
+			 <span class="menu"></span> 
+				<ul class="navig">
+					<li><a class="active" href="index.html">Home</a><span> </span></li>
+					<li><a href="explore.html">Explore</a><span> </span></li>
+					<li><a href="journal.html">Journal</a><span> </span></li>
+					<li><a href="plan.html">Plan</a><span> </span></li>
+					
+					<li><a href="contact.html">Contact</a><span> </span></li>
+				</ul>
+			</div>
+				 <!-- script-for-menu -->
+		 <script>
+				$("span.menu").click(function(){
+					$(" ul.navig").slideToggle("slow" , function(){
+					});
+				});
+		 </script>
+		 <!-- script-for-menu -->
+		</div>
+	</div>	
+	<!----end-header---->
+	<!--banner-starts-->
+	<div class="banner" id="home">
+		<div class="container">
+			<section class="slider">
+                <div class="flexslider">
+                    <ul class="slides">
+						<li>
+							<div class="banner-top">
+							<div class="col-md-6 banner-left">
+							<div class="bnr-one">
+								<img src="images/logo-3.png" alt="" />
+								<h3>Wellington</h3>
+								<a href="#">Read More</a>
+							</div>
+						</div>
+						<div class="col-md-6 banner-left">
+							<div class="bnr-one">
+								<img src="images/logo-3.png" alt="" />
+								<h3>Beijing</h3>
+								<a href="#">Read More</a>
+							</div>
+						</div>
+						
+						<div class="clearfix"></div>
+					</div>
+				</li>
+				<li>
+					<div class="banner-top">
+						<div class="col-md-6 banner-left">
+							<div class="bnr-one">
+								<img src="images/logo-3.png" alt="" />
+								<h3>Lake Tekapo</h3>
+								<a href="#">Read More</a>
+							</div>
+						</div>
+						<div class="col-md-6 banner-left">
+							<div class="bnr-one">
+								<img src="images/logo-3.png" alt="" />
+								<h3>Hong Kong</h3>
+								<a href="#">Read More</a>
+							</div>
+						</div>
+						
+						<div class="clearfix"></div>
+					</div>
+				</li>
+				<li>
+					<div class="banner-top">
+						<div class="col-md-6 banner-left">
+							<div class="bnr-one">
+								<img src="images/logo-3.png" alt="" />
+								<h3>Paris</h3>
+								<a href="#">Read More</a>
+							</div>
+						</div>
+						<div class="col-md-6 banner-left">
+							<div class="bnr-one">
+								<img src="images/logo-3.png" alt="" />
+								<h3>Rocky Moutains</h3>
+								<a href="#">Read More</a>
+							</div>
+						</div>
+						
+						<div class="clearfix"></div>
+					</div>
+				</li>
+          </ul>
+        </div>
+      </section>
+		</div>
+	</div>
+	<!--banner-ends--> 
+	<!--FlexSlider-->
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
+	<script defer src="js/jquery.flexslider.js"></script>
+	<script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+</div>
+			<!--End-slider-script-->
+	<!--explore-starts--> 
+	<div class="explore">
+		<div class="container">
+			<div class="explore-top">
+				<h1>WELCOME TO OUR EXPLORATION</h1>
+				<p> (logo concept) The inspiration of Gotogether logo is from jigsaw and plane. The jigsaw strongly represents the close connection. And plane is the popular transportation for traveling. For the final logo, the simplified plane makes by the jigsaw, which means getting together to travel. </p>
+			</div>
+			<div class="explore-bottom">
+				<div class="col-md-6 explore-left">
+					<h3>CITY EXPLORATION</h3>
+					<p>(Target audience) Someone with the drive to create fresh and personal tourist routes, using the information, helps of others who have been there or local people Someone who has already decided where to go but wants to find some traveling companions </p>
+					<div class="explore-one">
+						<div class="col-md-6 explore-one-left">
+							<a href="single.html"><img src="images/w-6.jpg" alt="" /></a>
+						</div>
+						<div class="col-md-6 explore-one-right">
+							<a href="single.html"><img src="images/w-4.jpg" alt="" /></a>
+							<a href="single.html" class="one-top"><img src="images/w-4.jpg" alt="" /></a>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<div class="col-md-6 explore-left">
+					<h3>CATEGORY EXPLORATION</h3>
+					<p>(Target audience 2) Someone who has got determinate vocation wants to find some tourist routes to join Gotogether hopes to make convenient to find interesting places, make travel plans and get in touch with the users who wants to go together</p>
+					<div class="explore-one">
+						<a href="single.html"><img src="images/w-2.jpg" alt="" /></a>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--welcome-ends--> 
+	<!--journal-starts-->
+	<div class="journal">
+		<div class="container">
+			<div class="journal-top heading">
+				<h2>OUR TOP JOURNALS</h2>
+			</div>
+			<div class="journal-bottom">
+				<div class="col-md-3 journal-left">
+					<a href="single.html"><img src="images/o-1.jpg" alt="" />
+					</a>
+					<h4><a href="single.html">Fantastic food in Japan</a></h4>
+					<p>Help us to build a community of collaborative travel style, from getting various information, create initial routes, communicate with others companions to travel together..</p>
+					<div class="j-btn">
+						<a href="single.html">Read More</a>
+					</div>
+				</div>
+				<div class="col-md-3 journal-left">
+					<a href="single.html"><img src="images/o-1.jpg" alt="" />
+					</a>
+					<h4><a href="single.html">Crazy shopping in America</a></h4>
+					<p>This site aims to connect strangers who have the same travel destination in the hopes of building an area to support their communication and decide to go together.</p>
+					<div class="j-btn">
+						<a href="single.html">Read More</a>
+					</div>
+				</div>
+				<div class="col-md-3 journal-left">
+					<a href="single.html"><img src="images/o-1.jpg" alt="" />
+					</a>
+					<h4><a href="single.html">Nayantara travels</a></h4>
+					<p>Gotogether is for creation of traveling routes and tourist grouping.The essential enjoyment for sharing travel experiences</p>
+					<div class="j-btn">
+						<a href="single.html">Read More</a>
+					</div>
+				</div>
+				<div class="col-md-3 journal-left">
+					<a href="single.html"><img src="images/o-1.jpg" alt="" />
+					></a>
+					<h4><a href="single.html">The siege of xian</a></h4>
+					<p>We aim to develop the mode of traveling from individual seclusion in making routes and seeking traveling companions to opening traveling sources and less boundary to find companions.</p>
+					<div class="j-btn">
+						<a href="single.html">Read More</a>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--journal-ends--> 
+	<!--about-starts--> 
+	<div class="about">
+		<div class="container">
+			<div class="about-top">
+				<h3>About us</h3>
+				<p>By directly connecting people in an interactive environment Gotogether hopes to birth diverse collectives who through multiple search, communication and community create personal travel routes and relationships.</p>
+			</div>
+		</div>
+	</div>
+	<!--about-ends--> 
+	<!--connect-starts--> 
+	<div class="connect">
+		<div class="container">
+			<div class="connect-top">
+				<div class="col-md-4 connect-left">
+					<span class="home"></span>
+					<h4>Home</h4>
+					<p>When users firstly log on Gotogther, they could do lots more exploration to find traveling destinations at aspects of certain city or category. </p>
+				</div>
+				<div class="col-md-4 connect-left">
+					<span class="men"></span>
+					<h4>Create a account</h4>
+					<p> After deciding where to go, the website will lead users to acquire sorted and popular journals wrote by the users who ever have been there including accommodation, restaurant and activity. </p>
+				</div>
+				<div class="col-md-4 connect-left">
+					<span class="pen"></span>
+					<h4>Log in</h4>
+					<p>Then users can could select options to their plans. Each user has a plan containing the usual information such as travel style, budget, skills, preferences and so on..</p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--connect-end--> 
+	<!--footer-starts--> 
+	<div class="footer">
+		<div class="container">
+			<div class="footer-top">
+				<div class="col-md-4 footer-left">
+					<p>design in Victoria university MDDN 201<a target="_blank" href="index.html">GoTogether</a></p>
+				</div>
+				<div class="col-md-4 footer-left">
+					<h3>Follow Us</h3>
+					<ul>
+						<li><a href="#"><span class="fb"> </span></a></li>
+						<li><a href="#"><span class="twit"> </span></a></li>
+						<li><a href="#"><span class="google"> </span></a></li>
+						<li><a href="#"><span class="pin"> </span></a></li>
+					</ul>
+				</div>
+				<div class="col-md-4 footer-left">
+					<h3>Address</h3>
+					<p>GoTogether, 
+					<span>139 Vivian Stree,Te Aro,Wellington,</span>
+					Sep 8th,2015.</p>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+		
+		<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	</div>
+	<!--footer-ends--> 
+</body>
+</html>
